@@ -1,0 +1,25 @@
+/**
+ * Nama : Nova Kensa A.D.O
+ * Kelas : 2B-D3
+ * NIM : 201511054
+ * Mapel : PBO
+ */
+
+public class Soal4 {
+
+	static short methodOne(long l) 
+	 { 
+	 int i = (int) l;
+	 System.out.println("int i :" + i);
+	 return (short)i;  
+	 } 
+
+	public static void main(String[] args) {
+		double d = 10.25; 
+		 float f = (float) d; 
+		 System.out.println("float f :" + f);
+		 byte b = (byte) methodOne((long) f);  
+		 System.out.println(b); 
+	}
+
+}
