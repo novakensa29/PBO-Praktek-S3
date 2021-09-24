@@ -1,0 +1,15 @@
+/**
+ * Nama : Nova Kensa A.D.O
+ * Kelas : 2B-D3
+ * NIM : 201511054
+ * Mapel : PBO
+ */
+
+public class Soal3 {
+	public static void main(String[] args) {
+		double x = 92.98;  
+		 int nx = (int) Math.round(x);
+		 System.out.println(nx);
+	}
+
+}
