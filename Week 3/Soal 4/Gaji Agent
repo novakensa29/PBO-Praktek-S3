@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+/**
+ * Matkul : PBO Week 3
+ */
+
+/**
+ * Nama : Nova Kensa Aura Dewi Oematan
+ * Kelas : 2B-D3
+ * NIM : 201511054
+ */
+public class Soal4 {
+	public static void main(String[] args) {
+		try (Scanner input = new Scanner (System.in)) {
+			int gaji=500000,JumlahItem, hasil, hargaItem=50000, Bonus=0,potongan=0;
+			
+			JumlahItem = input.nextInt();
+		
+			if(JumlahItem>=40 && JumlahItem <80) {
+				Bonus=JumlahItem*hargaItem *25/100;
+				hasil=gaji+Bonus;
+				System.out.printf("%d", hasil);
+			}
+			else if(JumlahItem>=80) {
+				Bonus=JumlahItem*hargaItem *35/100;
+				hasil=gaji+Bonus;
+				System.out.printf("%d", hasil);
+			}
+			else if(JumlahItem<15) {
+				potongan=(15-JumlahItem)*hargaItem *15/100;
+				hasil=gaji-potongan;
+				System.out.printf("%d", hasil);
+			}
+			else {
+				Bonus=JumlahItem*hargaItem*10/100;
+				hasil=gaji+Bonus;
+				System.out.printf("%d", hasil);
+			}
+		}
+
+	}
+
+}
