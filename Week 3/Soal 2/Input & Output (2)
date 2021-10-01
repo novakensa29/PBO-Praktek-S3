@@ -1,0 +1,40 @@
+import java.util.*;
+import java.util.Scanner;
+/**
+ *  Matkul : PBO week 3
+ */
+
+/**
+ * Nama : Nova Kensa Aura Dewi Oematan
+ * Kelas : 2B-D3
+ * NIM : 201511054
+ */
+public class Soal2 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner (System.in);
+		String n1, n2, n3;
+		int m1, m2, m3;
+		
+		n1 = input.next();
+		m1 = input.nextInt();
+		n2 = input.next();
+		m2 = input.nextInt();
+		n3 = input.next();
+		m3 = input.nextInt();
+		
+		System.out.println("================================");
+		System.out.printf("%-15s%03d\n", n1, m1);
+		System.out.printf("%-15s%03d\n", n2, m2);
+		System.out.printf("%-15s%03d\n", n3, m3);
+		// %03d menjelaskan bahwa nilai integral bernilai 3 digit artinya dari 0 sampai 999
+		// %-15s menjelaskan bahwa string tersebut hanya bisa memasukkan 15 character saja
+		/*for (int i = 0; i < 3; i++) {
+			System.out.printf("%-15s%03d\n", n1, m1);
+			System.out.printf("%-15s%03d\n", n2, m2);
+			System.out.printf("%-15s%03d\n", n3, m3);	
+		}*/
+		System.out.println("================================");
+	    input.close();
+	}
+
+}
