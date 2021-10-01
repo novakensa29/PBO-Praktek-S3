@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+/**
+ * Matkul : PBO week 3
+ */
+
+/**
+ * Nama : Nova Kensa Aura Dewi Oematan
+ * Kelas : 2B-D3
+ * NIM : 201511054
+ */
+public class soal3 {
+	public static void main(String[] args) {
+		try (Scanner input = new Scanner (System.in)) {
+			int x, y, hasil;
+			char operator = 0;
+			
+			x = input.nextInt();
+			operator = input.next().charAt(operator);
+			// charAt(operator) berfungsi untuk mengambil karakter index di operator 
+			y = input.nextInt();
+			
+			if (x >= 1 && y <= 1000) {
+			// menampilkan batas dari x dan y
+				switch (operator) {
+				// Menggunakan switch and case agar lebih mudah dalam perbandingan character operator
+				case '+':
+					hasil = x + y;
+					System.out.printf("%d", hasil);
+					break;
+				
+				case '-':
+					hasil = x - y;
+					System.out.printf("%d", hasil);
+					break;
+				
+				case '/':
+					hasil = x / y;
+					System.out.printf("%d", hasil);
+					break;
+				
+				case '*':
+					hasil = x * y;
+					System.out.printf("%d", hasil);
+					break;
+					
+				case '%':
+					hasil = x % y;
+					System.out.printf("%d", hasil);
+					break;
+				}
+			}
+		}
+	}
+}
