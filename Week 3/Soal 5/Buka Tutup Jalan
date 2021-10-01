@@ -1,0 +1,35 @@
+import java.util.Scanner;
+/**
+ * Matkul : PBO Week 3
+ */
+
+/**
+ * Nama : Nova Kensa Aura Dewi Oematan
+ * Kelas : 2B-D3
+ * NIM : 201511054
+ */
+public class Soal5 {
+	public static void main(String[] args) {
+		try (Scanner input = new Scanner (System.in)) {
+			String mobil;
+			
+			mobil = input.nextLine();
+			String[] nomorMobil = mobil.split(" "); 
+			// Split berfungsi untuk menghilangkan spasi
+			// Setiap angka yang masuk di mobil di masukkan kembali kedalam array
+			String number=nomorMobil[0]+nomorMobil[1]+nomorMobil[2]+nomorMobil[3];
+			// number didefinisikan memiliki 4 array
+			//System.out.println(number);
+	        long num = Long.parseLong(number);
+	        // Long.parseLong berfungsi untuk mengkonversi ke tipe long, agar nilai yang dimasukkan dapat dihitung
+	        long hasil=(num-999999) % 5;
+	        //System.out.println(hasil);
+	        	if(hasil == 0) {
+	        		System.out.println("jalan");
+	        	}else {
+	        		System.out.println("berhenti");
+	        	}   
+		}
+	}
+
+}
