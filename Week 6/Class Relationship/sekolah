@@ -43,4 +43,16 @@ public class sekolah {
 		}
 		return nomor;
 	}
+	
+	public int getTotalGuru() {
+		int nomor = 0;
+		List<guru> guru;
+		for(kelas k:kelas) {
+			guru = k.getguru();
+			for(guru g:guru) {
+				nomor++;
+			}
+		}
+		return nomor;
+	}
 }
