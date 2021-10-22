@@ -56,7 +56,7 @@ public class main {
 		Hufflepuff.add(m16);
 		Hufflepuff.add(m20);
 		
-		guru g1 = new guru(1001,"Severus Snape","Posion","Pria");
+		guru g1 = new guru(1001,"Severus Snape","Potions","Pria");
 		guru g2 = new guru(1002,"Minerva McGonagall","Transfiguration","Perempuan");
 		guru g3 = new guru(1003,"Filius Flitwick","Charms","Pria");
 		guru g4 = new guru(1004,"Pomona Sprout","Herbology","Perempuan");
@@ -75,7 +75,7 @@ public class main {
 
 		kelas k1 = new kelas(3,"Gryffindor",Gryffindor,Gryffindor1);
 		kelas k2 = new kelas(3,"Slytherin",Slytherin,Slytherin1);
-		kelas k3 = new kelas(3,"Slytherin",Ravenclaw,Ravenclaw1);
+		kelas k3 = new kelas(3,"Ravenclaw",Ravenclaw,Ravenclaw1);
 		kelas k4 = new kelas(3,"Hufflepuff",Hufflepuff,Hufflepuff1);
 		
 		List<kelas> k5 = new ArrayList<kelas> ();
@@ -87,6 +87,9 @@ public class main {
 		sekolah s1 = new sekolah("Hogwarts School","Albus Dumbledore",k5);
 		
 		tampil.tampilsekolah(s1);
-		//System.out.println("Total Murid		:"+sekolah.getTotalMurid());
+		System.out.println("\n===================");
+		System.out.println("Total Murid	:"+s1.getTotalMurid());
+		System.out.println("Total Guru	:"+s1.getTotalGuru());
+		System.out.println("===================\n");
 	}
 }
