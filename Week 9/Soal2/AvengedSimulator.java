@@ -33,6 +33,5 @@ public class AvengedSimulator {
 			 s.showPower();
 			 System.out.println("===============================");
 		 }
-//		 superhero.get(1).identity();
 	}
 }
